@@ -1,0 +1,74 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>  
+    <app-company-name [companyName]="'Beautygo'"></app-company-name>
+    <ion-buttons slot="end"> 
+        <ion-menu-button menu="mainMenu"></ion-menu-button>
+   </ion-buttons>  
+  </ion-toolbar> 
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding"> 
+  
+
+  <!-- Imagen de usuario y mensaje de bienvenida -->
+  <div class="user-info">
+    <img src="../../assets/img/COSMETICOS/MUJER USER.jpg" alt="User Avatar" class="user-avatar" />
+    <h2><strong>{{ bienvenidos }}</strong><br/> {{ email }}</h2>
+    <span>Tienes 0 puntos</span>
+  </div>
+
+
+  <div class="ofertas-info"> 
+    <h2>Aprovecha los descuentos</h2>
+  </div>
+
+ <!-- Cards de Ofertas -->
+ <ion-card>
+  <img src="../../assets/img/imagen1.jpg" alt="" />
+  <ion-card-header>
+    <ion-card-title>Set hidratante Beyou</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    Con su refrescante fórmula crema en gel sin aceite con exclusivo biofermento de aloe y ácido hialurónico que penetra en la superficie de la piel, para una hidratación de más de 10 capas de profundidad y que dura 100 horas, incluso después de lavarte el rostro.
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <img src="../../assets/img/imagen2.jpg" alt="Banana" />
+  <ion-card-header>
+    <ion-card-title>Esmalte de uñas OPI</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    Esmalte de uñas tradicional, con una fórmula de secado rápido, alta pigmentación y duración hasta por 7 dias. El cepillo ProWide proporciona una aplicación suave y rápida.  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <img src="../../assets/img/imagen5.jpg" alt="Naranja" />
+  <ion-card-header>
+    <ion-card-title>Labial MAC</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    Nuestro icónico lipstick con una nueva fórmula suave cómo la seda de larga duración, pigmentos enriquecidos y +12 horas de uso confortabl  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <img src="../../assets/img/imagen6.jpg" alt="Banana" />
+  <ion-card-header>
+    <ion-card-title>Brochas masquillaje</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    Las brochas, en esencia, están hechas para sacarle el mayor provecho al maquillaje, dejando un resultado final soñado, sombras difuminadas, una base con acabado natural e iluminaciones perfectas.  </ion-card-content>
+</ion-card>
+
+
+<ion-card>
+  <img src="../../assets/img/imagen9.jpg" alt="Banana" />
+  <ion-card-header>
+    <ion-card-title>Labial Maybelinne</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    El labial Made For All incluye pigmentos específicamente seleccionados y testados para que nos sienten bien a todas.  </ion-card-content>
+</ion-card>
+
+
+</ion-content>

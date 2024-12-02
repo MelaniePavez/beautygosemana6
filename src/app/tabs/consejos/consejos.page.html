@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="title_tab">
+    <h2>Consejos para cuidar tu piel</h2>
+  </div>
+
+  <ion-list>
+    <!-- Cambiar 'Consejos' por 'consejos' -->
+    <ion-item *ngFor="let consejo of consejos">
+      <ion-card>
+        <img [src]="consejo.imagen" alt="{{ consejo.nombre }}" />
+        <ion-card-header>
+          <ion-card-title>{{ consejo.nombre }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <p>{{ consejo.descripcion }}</p>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>

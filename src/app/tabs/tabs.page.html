@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <app-company-name [companyName]="'Beautygo'"></app-company-name>
+    <ion-buttons slot="end">
+      <ion-menu-button menu="mainMenu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Aquí se renderizan los contenidos de los tabs -->
+  <ion-router-outlet></ion-router-outlet>
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="productos">
+      <ion-icon name="cube-outline"></ion-icon>
+      <ion-label>Productos</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="consejos">
+      <ion-icon name="person"></ion-icon>
+      <ion-label>Consejos</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="galeria">
+      <ion-icon name="images-outline"></ion-icon>
+      <ion-label>Galería</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
